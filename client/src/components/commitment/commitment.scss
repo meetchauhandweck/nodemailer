@@ -1,0 +1,107 @@
+@import "../../variables.scss";
+
+.commitment {
+  background-color: #d9d9d9;
+  padding: 100px 0 199px;
+  @media(max-width:767px){
+    padding: 80px 0 120px;
+  }
+  .commitment_container {
+    max-width: 1600px;
+    padding: 0 20px;
+    margin: 0 auto;
+    @media (max-width: 1600px) {
+      max-width: 1440px;
+    }
+    @media (max-width: 1440px) {
+      max-width: 1339px;
+    }
+    @media (max-width: 1339px) {
+      max-width: 1199px;
+    }
+    @media (max-width: 1199px) {
+      max-width: 991px;
+    }
+    @media (max-width: 991px) {
+      max-width: 767px;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+    .commitment_title {
+      color: #002d70;
+
+      font-family: Inter;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 64px;
+      letter-spacing: 0.015em;
+      text-align: left;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 30px 0 0;
+      flex-wrap: wrap;
+      @media (max-width: 575px) {
+        // flex-direction: column;
+      }
+      .container_circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        margin: 40px 0 0;
+        @media (max-width: 991px) {
+          width: 50%;
+        }
+        // @media (max-width: 767px) {
+        //   width: 100%;
+        // }
+
+        .circle {
+          width: 100px;
+          height: 100px;
+          border: 2px solid #002d70;
+          padding: 33px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media (max-width: 575px) {
+            padding: 0;
+          }
+        }
+
+        .circle img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 50%;
+          align-items: center;
+          width: 65px;
+        }
+
+        .container_text {
+          color: $black;
+          text-align: center;
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 106.523%; /* 37.283px */
+          letter-spacing: 0.525px;
+          text-transform: capitalize;
+          margin: 40px 0 0;
+          @media (max-width: 991px) {
+            margin: 30px 0 0;
+          }
+          @media (max-width: 767px) {
+            margin: 20px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

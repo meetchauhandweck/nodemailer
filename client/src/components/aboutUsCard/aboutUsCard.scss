@@ -1,0 +1,73 @@
+@import "../../variables.scss";
+
+.aboutUsCard {
+  padding: 105px 0;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -24px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .aboutUsCardItem {
+      width: 33.33%;
+
+      @media (max-width: 991px) {
+        width: 50%;
+        margin: 0 0 20px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      &_wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 24px;
+        h2 {
+          background-color: $darkBlue;
+          color: $white;
+          font-size: 47px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 46px; /* 76.856px */
+          letter-spacing: 0.705px;
+          text-transform: capitalize;
+          padding: 36px 30px;
+          @media (max-width: 1199px) {
+            font-size: 38px;
+            line-height: 42px;
+            padding: 28px 26px;
+          }
+          @media (max-width:767px) {
+            font-size: 32px;
+            line-height: 36px;
+            padding: 22px 26px;
+          }
+        }
+        p {
+          color: $darkBlue;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 163.523%; /* 22.893px */
+          letter-spacing: 0.21px;
+          text-transform: capitalize;
+          padding: 108px 30px 71px;
+          background-color: $grey1;
+          border-bottom: 4px solid $darkBlue;
+          height: 100%;
+          @media (max-width: 1199px) {
+            padding: 90px 26px 55px;
+          }
+          @media (max-width:767px) {
+            padding: 65px 26px 55px;
+          }
+        }
+      }
+    }
+  }
+}

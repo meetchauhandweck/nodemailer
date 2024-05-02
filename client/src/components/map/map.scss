@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.map {
+  position: relative;
+  &_wrapper {
+    // min-height: 850px;
+    height: 100%;
+    overflow: hidden;
+    iframe {
+      width: 100%;
+      min-height: 854px;
+      height: 100%;
+      filter: grayscale(1);
+      float: left;
+      border-bottom: 1px solid $darkBlue;
+      @media (max-width: 991px) {
+        min-height: 780px;
+      }
+      @media (max-width: 767px) {
+        min-height: 610px;
+      }
+    }
+  }
+  .contact_form {
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    right: 100px;
+    z-index: 999;
+    width: 501px;
+    @media (max-width: 1199px) {
+      bottom: -120px;
+    }
+    @media (max-width: 991px) {
+      bottom: -70px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

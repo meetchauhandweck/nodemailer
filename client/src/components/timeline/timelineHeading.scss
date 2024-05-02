@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.timelineHeading {
+  &_wrapper {
+    .small_text {
+      color: $black;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 153.023%; /* 64.27px */
+      letter-spacing: 0.63px;
+      text-transform: capitalize;
+      @media(max-width:991px){
+        margin: 0 0 20px;
+        font-size: 35px;
+      }
+      @media(max-width:767px){
+        width: 100%;
+        font-size: 25px;
+      }
+    }
+    .big_text {
+      font-size: 82px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 124.523%; /* 114.561px */
+      letter-spacing: -0.46px;
+      text-transform: capitalize;
+      background: linear-gradient(
+        180deg,
+        #002d70 0%,
+        rgba(38, 203, 225, 0) 155.89%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 1060px;
+      @media (max-width: 1199px) {
+        font-size: 56px;
+        width: 925px;
+      }
+      @media(max-width:991px){
+        width: 95%;
+        font-size: 46px;
+      }
+      @media(max-width:767px){
+        width: 98%;
+        font-size: 32px;
+      }
+    }
+  }
+}

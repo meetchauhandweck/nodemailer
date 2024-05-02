@@ -1,0 +1,192 @@
+@import "../../variables.scss";
+
+.blogCards {
+  padding: 138px 0 150px;
+  @media (max-width: 991px) {
+    padding: 110px 0 130px;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0 80px;
+  }
+  .blog_container {
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    @media (max-width: 1320px) {
+      max-width: 1199px;
+    }
+    @media (max-width: 1199px) {
+      max-width: 991px;
+    }
+    @media (max-width: 991px) {
+      max-width: 767px;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -14px;
+      @media (max-width: 1199px) {
+        margin: 0 -8px;
+      }
+      @media (max-width: 991px) {
+        margin: 0 -10px;
+      }
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+    }
+
+    .card {
+      width: 33.33%;
+      margin: 0 0 40px;
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      &_wrapper {
+        position: relative;
+        height: 100%;
+        padding: 0 14px;
+        @media (max-width: 1199px) {
+          padding: 0 8px;
+        }
+        @media (max-width: 991px) {
+          padding: 0 10px;
+        }
+        @media (max-width: 767px) {
+          padding: 0;
+        }
+        &_inner {
+          height: 100%;
+          color: $white;
+          background-color: $darkBlue;
+          display: flex;
+          flex-direction: column;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 86%;
+          height: 92%;
+          border: 1px solid $white;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @media (max-width: 767px) {
+            width: 94%;
+          }
+          @media (max-width: 575px) {
+            width: 91%;
+          }
+        }
+        @media (max-width: 767px) {
+          margin: 0 0 30px;
+        }
+
+        .card_image {
+          max-width: 100%;
+          display: block;
+          width: 100%;
+        }
+      }
+      &:nth-child(2n) {
+        .card_wrapper_inner {
+          background-color: $blue;
+        }
+      }
+    }
+
+    a {
+      padding: 5px 20px 5px 10px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0.5px solid $lightBlue4;
+      color: $lightBlue4;
+      text-decoration: none;
+      width: 122px;
+      display: flex;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      margin-left: auto;
+      margin-top: auto;
+      &:hover {
+        img {
+          transform: translateX(10px);
+        }
+      }
+      img {
+        padding: 0 0 0 20px;
+        transition: all 0.3s;
+      }
+    }
+
+    .cardcolor {
+      padding: 1rem 2rem 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .heading {
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      margin: 0 0 10px;
+    }
+
+    .content {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      margin: 27px 0;
+      color: #c4e7fc;
+    }
+
+    .date {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #c4e7fc;
+    }
+  }
+}
+
+// @media screen and (max-width: 426px) {
+//   .card-grid {
+//     display: block;
+//     gap: 2rem;
+//     padding: 20px;
+//   }
+
+//   .cardcolor {
+//     padding: 0rem 1rem 1rem 1rem;
+//     margin-bottom: 20px;
+//   }
+// }
+
+// @media screen and (max-width: 1024px) and (min-width: 768px) {
+//   .card-grid {
+//     padding: 40px;
+//   }
+// }
+
+// @media screen and (max-width: 768px) and (min-width: 426px) {
+//   .card-grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     /* 3 cards per row */
+//     gap: 2rem;
+//   }
+// }

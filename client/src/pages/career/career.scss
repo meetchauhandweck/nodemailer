@@ -1,0 +1,165 @@
+.career {
+  .careerForm {
+    display: flex;
+    justify-content: start;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+    .contactUsForm {
+      width: 45%;
+      background-color: #007dc5;
+      @media (max-width: 1199px) {
+        padding: 40px 0;
+      }
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      .form-section {
+        flex: 1;
+        flex: 4;
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        background-color: #007dc5;
+        color: white;
+        justify-content: center;
+      }
+
+      .mapframe {
+        width: 100%;
+        height: 130vh;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 50px;
+        @media (max-width: 575px) {
+          padding: 20px;
+        }
+      }
+
+      input,
+      textarea {
+        padding: 20px;
+        border: 1px solid white;
+        background-color: #007dc5;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        font-family: Poppins;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.015em;
+        text-align: left;
+        color: #fff;
+        width: -webkit-fill-available;
+        &::placeholder {
+          color: white;
+        }
+      }
+      .form-section {
+        max-width: 100%;
+        height: 100%;
+        .contactformtitle {
+          padding: 0 20px 0 50px;
+          font-size: 50px;
+          font-weight: 400;
+
+          @media (max-width: 1199px) {
+            padding: 0 20px 0 50px;
+            font-size: 40px;
+          }
+          @media (max-width: 575px) {
+            margin: 0 0 20px;
+            padding: 0 20px;
+            font-size: 36px;
+          }
+        }
+        .fileFiled {
+          // border: 1px solid #fff;
+          // border-radius: 5px;
+          .fileIconWithText {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+          }
+          .uploadFile {
+            cursor: pointer;
+            padding: 0;
+            border: none;
+            background-image: url(/raaj-solar/src/images/uploadFile.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 35px;
+            height: 33px;
+            display: inline-block;
+            &::before {
+              content: " ";
+              width: 56px;
+              height: 56px;
+              display: block;
+            }
+          }
+        }
+
+        .fileField {
+          margin: 0 0 30px;
+          input {
+            border: none !important;
+          }
+        }
+
+        button {
+          padding: 20px 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: white;
+          color: black;
+          // transition: background-color 0.3s;
+          font-family: Poppins;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.015em;
+          border-radius: 8px;
+          img {
+            transition: all 0.5s;
+            margin-left: 10px;
+          }
+          &:hover {
+            img {
+              transform: translateX(10px);
+            }
+          }
+        }
+      }
+    }
+    .image {
+      width: 55%;
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

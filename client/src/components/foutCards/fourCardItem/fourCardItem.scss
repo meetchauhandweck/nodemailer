@@ -1,0 +1,62 @@
+@import "../../../variables.scss";
+
+.fourCardItem {
+  width: 25%;
+
+  @media (max-width: 991px) {
+    width: 50%;
+    &:first-child {
+      margin: 0 0 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 0 0 20px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &_wrapper {
+    padding: 0 19px;
+    @media (max-width: 1199px) {
+      padding: 0 16px;
+    }
+    @media (max-width: 991px) {
+      padding: 0 13px;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    &_logo {
+      background-color: $white;
+      img {
+        max-width: 100%;
+      }
+    }
+    &_link {
+      background-color: $lightBlue1;
+      text-align: center;
+      transition: all 0.4s;
+      &:hover {
+        background-color: $darkBlue;
+        a {
+          color: $white;
+        }
+      }
+      a {
+        color: $black;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px; /* 500% */
+        letter-spacing: -0.45px;
+        text-transform: capitalize;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        transition: all 0.4s;
+      }
+    }
+  }
+}

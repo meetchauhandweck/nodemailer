@@ -1,0 +1,131 @@
+.Superiorwarranty {
+  margin-bottom: 100px;
+  &_wrapper {
+    max-width: 1040px;
+    margin: 0 auto;
+    .Superiorwarrantytitle {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      margin-left: 40px;
+    }
+
+    .Superiorwarrantyimg {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-top: 50px;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+
+    .warrantyItem {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 60px;
+      @media (max-width: 1199px) {
+        margin-right: 40px;
+      }
+      @media (max-width: 767px) {
+        margin: 0 0 40px;
+        justify-content: flex-start;
+      }
+      &:last-child {
+        margin: 0;
+      }
+      &_wrapper {
+        img {
+          max-width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    // .Asset27 {
+    //   display: flex;
+    //   margin-left: 80px;
+    // }
+
+    .Superiorwarrantytext {
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #cf8b2c;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      @media (max-width: 1199px) {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    .year {
+      color: #cf8b2c;
+      font-family: "Praise";
+      font-size: 62px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 38px; /* 61.29% */
+      letter-spacing: 0.93px;
+      text-transform: capitalize;
+    }
+
+    .year2 {
+      font-family: Praise;
+      font-size: 62px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #cf8b2c;
+      margin: 0px;
+      margin-left: -29px;
+      margin-top: -36px;
+    }
+  }
+}
+
+// @media screen and (max-width: 1024px) {
+//   .Superiorwarrantytitle {
+//     margin-left: 50px;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .Superiorwarrantytext {
+//     line-height: 21px;
+//     font-size: 25px;
+//   }
+
+//   .Asset27 {
+//     margin-left: 45px;
+//   }
+// }
+// @media screen and (max-width: 426px) {
+//   .Superiorwarrantyimg .Asset10 img {
+//     width: 70%;
+//   }
+//   .Superiorwarrantyimg {
+//     display: block;
+//   }
+//   .Asset27 {
+//     margin-top: 20px;
+//   }
+//   .year1 {
+//     margin-left: 71px;
+//     margin-top: -13px;
+//     font-size: 45px;
+//   }
+//   .year2 {
+//     margin-left: -23px;
+//     margin-top: -29px;
+//     font-size: 45px;
+//   }
+// }

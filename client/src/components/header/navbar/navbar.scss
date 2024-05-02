@@ -1,0 +1,170 @@
+@import "../../../variables.scss";
+
+.navbar {
+  @media (max-width: 991px) {
+    display: block;
+  }
+  .mobileMenu_icon {
+    display: none;
+    @media (max-width: 991px) {
+      display: block;
+      background-color: $darkBlue;
+      height: 100%;
+      width: 94px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .line1 {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: 22px;
+          width: 50px;
+          height: 2px;
+          background-color: $white;
+          transition: all 0.5s;
+        }
+      }
+      .line2 {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 22px;
+          width: 50px;
+          height: 2px;
+          background-color: $white;
+          transition: all 0.5s;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      width: 75px;
+      .line1 {
+        &::before {
+          width: 42px;
+          left: 18px;
+        }
+      }
+      .line2 {
+        &::before {
+          width: 42px;
+          left: 18px;
+        }
+      }
+    }
+    &.active {
+      .line1 {
+        &::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+      }
+      .line2 {
+        &::before {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+      }
+    }
+  }
+  &_wrapper {
+    overflow: hidden;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        margin: 40px 0;
+      }
+      .mobile_home {
+        display: none;
+        @media (max-width: 991px) {
+          display: block;
+        }
+      }
+      li {
+        padding: 0 40px;
+        &.downloadLogoMObile {
+          display: none;
+        }
+        @media (max-width: 1360px) {
+          padding: 0 30px;
+        }
+        @media (max-width: 1240px) {
+          padding: 0 20px;
+        }
+        @media (max-width: 1060px) {
+          padding: 0 15px;
+        }
+        @media (max-width: 991px) {
+          padding: 0 20px;
+          width: 100%;
+          &.downloadLogoMObile {
+            display: block;
+            a {
+              display: flex;
+              align-items: center;
+              img {
+                width: 35px;
+              }
+            }
+          }
+        }
+
+        // &:last-child {
+        //   padding-right: 0;
+        // }
+        a {
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 266%;
+          letter-spacing: 0.78px;
+          text-transform: uppercase;
+          transition: all 0.5s;
+          &:hover {
+            color: $blue;
+            @media (max-width: 991px) {
+              color: $white;
+            }
+          }
+          @media (max-width: 1199px) {
+            font-size: 14px;
+          }
+          @media (max-width: 991px) {
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 266%;
+            color: $white;
+            &.downloadLogoMObile {
+              display: flex;
+              align-items: center;
+            }
+          }
+          @media (max-width: 320px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      width: 0px;
+      position: absolute;
+      background: $darkBlue;
+      color: $white;
+      right: 0;
+      // top: 158px;
+      height: 100vh;
+      z-index: 9999;
+      transition: all 0.5s ;
+      &.active {
+        width: 100%;
+      }
+    }
+  }
+}

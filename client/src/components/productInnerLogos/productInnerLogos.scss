@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.productInnerLogos {
+  background-color: $grey9;
+  padding: 60px 0;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1040px;
+    margin: 0 auto;
+    @media (max-width: 991px) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+   
+    .productInnerLogoItem {
+      padding: 0 20px;
+      @media (max-width: 991px) {
+        width: 33.33%;
+        padding: 0;
+        margin: 0 0 20px;
+      }
+      @media(max-width:576px){
+        width: 50%;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

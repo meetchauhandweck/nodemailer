@@ -1,0 +1,75 @@
+@import "../../../variables.scss";
+
+.textWithIconItem {
+  width: 50%;
+  padding: 0 0 54px;
+  margin: 0 0 51px;
+  position: relative;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  &:nth-child(2n) {
+    display: flex;
+    justify-content: right;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../../images/text_with_icon_border.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 388px;
+    height: 1px;
+    bottom: 0;
+    @media (max-width: 991px) {
+      width: 330px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &:last-child {
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: 767px) {
+    &:nth-last-child(-n + 2) {
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &_wrapper {
+    display: flex;
+    .textWithIconItem_icon {
+      img {
+        max-width: 100%;
+      }
+    }
+    .textWithIconItem_text {
+      color: $darkBlue;
+      font-size: 29px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 108.621% */
+      letter-spacing: -0.87px;
+      text-transform: capitalize;
+      width: 270px;
+      margin: 0 0 0 33px;
+      @media (max-width: 991px) {
+        font-size: 22px;
+        line-height: 30px;
+        width: 200px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}

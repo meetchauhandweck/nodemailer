@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.homePageCommonHeading {
+  width: fit-content;
+  margin-left: 80px;
+  @media (max-width: 1199px) {
+    margin-left: 70px;
+  }
+  @media (max-width: 991px) {
+    margin-left: 55px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 25px;
+  }
+  &_text {
+    color: $darkBlue;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 30px; /* 182.927% */
+    letter-spacing: -1.23px;
+    text-transform: uppercase;
+    padding: 12px 22px;
+    border: 2px solid $darkBlue;
+    @media (max-width: 1199px) {
+      font-size: 35px;
+      line-height: 28px;
+    }
+    @media (max-width: 991px) {
+      font-size: 30px;
+      line-height: 25px;
+    }
+    @media (max-width: 767px) {
+      font-size: 25px;
+      line-height: 22px;
+    }
+  }
+}

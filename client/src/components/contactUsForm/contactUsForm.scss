@@ -1,0 +1,115 @@
+@import "../../variables.scss";
+
+.contactUsForm {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .map-section {
+    flex: 6;
+    max-width: 65%;
+    @media (max-width: 1600px) {
+      max-width: 60%;
+    }
+    @media (max-width: 991px) {
+      max-width: 55%;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      height: 400px;
+    }
+  }
+
+  .form-section {
+    flex: 1;
+    flex: 4;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    @media (max-width: 1600px) {
+      max-width: 40%;
+    }
+    @media (max-width: 991px) {
+      max-width: 45%;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+    .contact_form {
+      display: block;
+      width: 100%;
+      form {
+        padding: 0;
+      }
+    }
+  }
+
+  .mapframe {
+    width: 100%;
+    height: 100%;
+    float: left;
+    @media (max-width: 767px) {
+      height: 600px;
+    }
+    @media (max-width: 575px) {
+      height: 350px;
+    }
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .map-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .form-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .mapframe {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+@media (max-width: 1024px) {
+  form {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .map-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* padding: 20px 150px; */
+  }
+  .form-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* padding: 20px 150px; */
+  }
+
+  .mapframe {
+    width: 100%;
+    height: 100vh;
+  }
+}

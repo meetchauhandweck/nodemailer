@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+
+.productLinkCards {
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      width: 50%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      &:last-child {
+        .productLinkCardItem {
+          background-color: $darkBlue;
+          h2 {
+            color: $white;
+          }
+        }
+      }
+      .productLinkCardItem {
+        background-color: $lightBlue1;
+        padding: 74px 20px 74px 82px;
+        @media (max-width: 991px) {
+          padding: 45px 20px 45px 55px;
+        }
+        h2 {
+          color: $darkBlue;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 97.523%; /* 46.811px */
+          letter-spacing: 0.72px;
+          // text-transform: uppercase;
+          max-width: 386px;
+          width: 100%;
+          @media (max-width: 991px) {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+}

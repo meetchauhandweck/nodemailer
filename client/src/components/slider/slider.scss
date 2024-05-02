@@ -1,0 +1,160 @@
+@import "../../variables.scss";
+.test_slider {
+  background-color: $blue;
+  .homePageCommonHeading {
+    padding: 83px 0 0;
+
+    .homePageCommonHeading_text {
+      color: $white;
+      border: 2px solid $white;
+    }
+  }
+  &_wrapper {
+    padding: 100px 0;
+    max-width: 1040px;
+    margin: 0 auto;
+    @media (max-width: 1199px) {
+      max-width: 912px;
+    }
+    @media (max-width: 991px) {
+      max-width: 700px;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
+      max-width: 100%;
+    }
+    .slider {
+      max-width: 1110px;
+      margin: 0 auto;
+    }
+
+    .slick-track {
+      padding-top: 53px;
+      padding-bottom: 53px;
+      display: flex;
+      align-items: center;
+      @media (max-width: 767px) {
+        padding: 0 0 60px;
+      }
+    }
+
+    .slick-slide {
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .slick-slide:not(.slick-current) {
+      // filter: brightness(0.5);
+      opacity: 0.5;
+      @media (max-width: 767px) {
+        opacity: 1;
+      }
+    }
+
+    .slick-slide.slick-current {
+      transform: scale(1.5);
+      position: relative;
+      z-index: 1;
+      @media (max-width: 767px) {
+        transform: scale(1);
+      }
+    }
+    .slick-prev {
+      left: -32px;
+      @media (max-width: 767px) {
+        left: 45%;
+        top: 86%;
+        z-index: 999;
+      }
+      @media (max-width: 575px) {
+        left: 40%;
+      }
+    }
+    .slick-next {
+      @media (max-width: 767px) {
+        right: 45%;
+        top: 86%;
+        z-index: 999;
+      }
+      @media (max-width: 575px) {
+        right: 40%;
+      }
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 30px;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-slide.slick-current .card_content {
+      // font-size: 12px;
+      border: 2px solid $white;
+    }
+    .card_content {
+      background-color: $blue;
+      color: $white;
+      border: 3px solid $white;
+      border-radius: 35px;
+      // padding: 60px 50px 50px 81px;
+      //   margin: 0 10px;
+      margin: 65px 3px;
+      padding: 30px 0;
+      @media (max-width: 991px) {
+        padding: 20px 0;
+      }
+      @media (max-width: 767px) {
+        padding: 30px 10px;
+      }
+
+      h3 {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 37.5px;
+        text-transform: capitalize;
+        margin: 0 0 25px;
+        padding: 0 37px;
+        text-align: left;
+        @media (max-width: 1199px) {
+          font-size: 24px;
+          line-height: 32.5px;
+          margin: 0 0 20px;
+          padding: 0 20px;
+        }
+        @media (max-width: 991px) {
+          font-size: 19px;
+          line-height: 25.5px;
+          margin: 0 0 10px;
+        }
+        @media (max-width: 767px) {
+          font-size: 27px;
+          line-height: 34.5px;
+          margin: 0 0 25px;
+        }
+      }
+      .content {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.5px;
+        text-transform: capitalize;
+        padding: 0 37px;
+        text-align: left;
+        @media (max-width: 1199px) {
+          padding: 0 20px;
+          font-size: 13px;
+          line-height: 22.5px;
+        }
+        @media (max-width: 991px) {
+          font-size: 11px;
+          line-height: 22.5px;
+        }
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

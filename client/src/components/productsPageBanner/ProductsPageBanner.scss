@@ -1,0 +1,93 @@
+@import "../../variables.scss";
+
+.productPageBanner {
+  background-color: $blue;
+  color: $white;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    max-width: 1040px;
+    margin: 100px auto 0;
+    @media(max-width:1199px){
+      margin: 100px auto 0;
+    }
+    @media(max-width:991px){
+      margin: 80px auto 0;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      margin: 0;
+    }
+    &_image {
+      width: 40%;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0 0 20px;
+        display: none;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        // width: 100%;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+    &_inner {
+      margin-right: 100px;
+      @media (max-width: 991px) {
+        margin: 0;
+      }
+      &_wrapper {
+        width: 384px;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        h2 {
+          color: $white;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 97.523%; /* 46.811px */
+          letter-spacing: 0.72px;
+          // text-transform: uppercase;
+          margin: 0 0 20px;
+        }
+        .content {
+          color: $white;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0.21px;
+          text-transform: capitalize;
+          margin: 0 0 20px;
+        }
+        .link {
+          width: fit-content;
+          a {
+            width: 150px;
+            color: $lightBlue4;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            border: 1px solid $lightBlue4;
+            padding: 10px;
+            &:hover {
+              img {
+                transform: translateX(10px);
+              }
+            }
+            img {
+              padding: 0 0 0 20px;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

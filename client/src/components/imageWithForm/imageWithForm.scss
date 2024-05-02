@@ -1,0 +1,22 @@
+.imageWithForm {
+  &_wrapper {
+    position: relative;
+    img {
+      max-width: 100%;
+      display: block;
+      width: 100%;
+    }
+    .contact_form {
+      position: absolute;
+      top: -95px;
+      right: 100px;
+      background: white;
+      color: #1e1e1e;
+      width: 501px;
+      display: block;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}

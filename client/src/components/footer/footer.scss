@@ -1,0 +1,317 @@
+@import "../../variables.scss";
+
+.footer {
+  background: $darkBlue;
+  color: $white;
+  padding: 64px 0 0;
+  position: relative;
+  .wrapper_f1 {
+    padding: 0 0 60px;
+    border-bottom: 1px solid $blue;
+    .f1 {
+      width: 450px;
+      @media (max-width: 991px) {
+        width: 360px;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+      h3 {
+        margin: 0 0 20px;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 43px;
+        letter-spacing: 0.345px;
+        text-transform: capitalize;
+      }
+      p {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 35px;
+        letter-spacing: 0.3px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .f2 {
+    display: flex;
+    font-size: 19px;
+    margin: 50px -20px 0;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+    .col1 {
+      width: 18%;
+      padding: 0 20px;
+      @media (max-width: 991px) {
+        width: 20%;
+      }
+      @media (max-width: 767px) {
+        width: 40%;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+    }
+    .col2 {
+      width: 18%;
+      padding: 0 20px;
+      @media (max-width: 991px) {
+        width: 20%;
+      }
+      @media (max-width: 767px) {
+        width: 40%;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+        margin: 30px 0 0;
+      }
+    }
+    .col3 {
+      width: 30%;
+      padding: 0 20px;
+      .address {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 35px;
+        letter-spacing: 0.3px;
+        a {
+          color: $white;
+          text-decoration: none;
+          transition: all 0.3s;
+          font-weight: 400;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+      .link a {
+        color: $white;
+        text-decoration: none;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0.3px;
+        transition: all 0.3s;
+        &:hover {
+          color: $blue;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 30px 0 0;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 43px;
+      letter-spacing: 0.345px;
+      text-transform: capitalize;
+    }
+  }
+  .f3 {
+    a {
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 35px;
+      letter-spacing: 0.3px;
+      text-transform: capitalize;
+      color: $white;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .contact {
+    width: 485px;
+    height: 153px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+    .copyright_text {
+      color: $lightBlue4;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 33.5px;
+      letter-spacing: 0.3px;
+      text-transform: capitalize;
+      padding-right: 20px;
+      @media (max-width: 991px) {
+        margin: 0 0 20px;
+        padding: 0;
+      }
+      span a {
+        color: $lightBlue4;
+        transition: all 0.3s;
+        margin: 0 0 0 5px;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    gap: 1rem;
+    @media (max-width: 991px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .icon {
+      cursor: pointer;
+      background-color: white;
+      padding: 9px;
+      color: #002d70;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      transition: all 0.3s;
+      width: 17px;
+      height: 15px;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      a {
+        display: flex;
+      }
+    }
+  }
+
+  .contact_form {
+    background: white;
+    color: #1e1e1e;
+    //   padding: 35px 35px 0 35px;
+    width: 501px;
+    //   height: 499px;
+    position: absolute;
+    top: -350px;
+    right: 100px;
+    display: block;
+    @media (max-width: 1199px) {
+      width: 420px;
+    }
+    @media (max-width: 991px) {
+      width: 370px;
+      right: 45px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+    .contact_form_wrapper {
+      width: 100%;
+      h2 {
+        padding: 35px 35px 0;
+      }
+      .form_wrapper {
+        padding: 35px;
+      }
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 24px;
+    }
+
+    .field input {
+      border: none;
+      // opacity: 0.5;
+      border-bottom: 1px solid #d1d1d1;
+      height: 40px;
+      width: 75%;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @media (max-width: 1199px) {
+        width: 80%;
+      }
+      @media (max-width: 991px) {
+        width: 90%;
+      }
+    }
+    .field .message_field {
+      padding: 70px 0 0;
+      @media (max-width: 991px) {
+        padding: 45px 0 0;
+      }
+    }
+    .css-b62m3t-container {
+      width: 75% !important;
+      @media (max-width: 1199px) {
+        width: 80% !important;
+      }
+      @media (max-width: 991px) {
+        width: 90% !important;
+      }
+    }
+    .field input:focus {
+      outline: none;
+    }
+
+    .field label {
+      color: #1e1e1e;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    select .dropdown {
+      border: 2px solid white;
+      background-color: blue;
+    }
+    .submit_btn {
+      /* border-radius: 500px; */
+      /* border: 1.3px solid #FFF; */
+      background: #007dc5;
+      width: 200px;
+      height: 52px;
+      cursor: pointer;
+      color: white;
+      flex-shrink: 0;
+      font-size: 20px;
+      border: none;
+    }
+
+    .submit_btn:focus-visible {
+      outline: none;
+    }
+
+    p.error {
+      color: red;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .common_button_outer2 {
+      width: 100%;
+      margin: 0px 0px;
+      text-align: right;
+    }
+  }
+}

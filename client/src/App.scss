@@ -1,0 +1,9 @@
+#hide-header {
+  transition: all 0.4s ease !important;
+}
+.mobile_menu_open {
+  overflow: hidden;
+  #hide-header {
+    top: 0 !important;
+  }
+}

@@ -1,0 +1,117 @@
+@import "../../variables.scss";
+
+.contact_form {
+  background: $white;
+  color: $black;
+  display: none;
+  @media (max-width: 1199px) {
+    width: 420px;
+  }
+  @media (max-width: 991px) {
+    width: 370px;
+    right: 45px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    display: block;
+  }
+
+  .contact_form_wrapper {
+    width: 100%;
+    h2 {
+      padding: 35px 35px 0;
+    }
+    .form_wrapper {
+      padding: 35px;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 24px;
+  }
+
+  .field input {
+    border: none;
+    // opacity: 0.5;
+    border-bottom: 1px solid #d1d1d1;
+    height: 40px;
+    width: 75%;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $darkBlue1;
+    &::placeholder {
+      color: $grey4;
+      font-weight: 400;
+    }
+    @media (max-width: 1199px) {
+      width: 80%;
+    }
+    @media (max-width: 991px) {
+      width: 90%;
+    }
+  }
+  .field .message_field {
+    padding: 70px 0 0;
+    @media (max-width: 991px) {
+      padding: 45px 0 0;
+    }
+  }
+  .css-b62m3t-container {
+    width: 75% !important;
+    @media (max-width: 1199px) {
+      width: 80% !important;
+    }
+    @media (max-width: 991px) {
+      width: 90% !important;
+    }
+  }
+  .field input:focus {
+    outline: none;
+  }
+
+  .field label {
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  select .dropdown {
+    border: 2px solid $white;
+    background-color: $blue;
+  }
+  .submit_btn {
+    background: #007dc5;
+    width: 200px;
+    height: 52px;
+    cursor: pointer;
+    color: white;
+    flex-shrink: 0;
+    font-size: 20px;
+    border: none;
+    transition: all 0.3s;
+    &:hover {
+      background: $darkBlue;
+    }
+  }
+
+  .submit_btn:focus-visible {
+    outline: none;
+  }
+
+  p.error {
+    color: red;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .common_button_outer2 {
+    width: 100%;
+    margin: 0px 0px;
+    text-align: right;
+  }
+}

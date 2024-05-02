@@ -1,0 +1,58 @@
+@import "../../../variables.scss";
+
+.downloadLogo {
+  background-color: $darkBlue;
+  color: $white;
+  width: 140px;
+  height: 100px;
+  display: block;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $darkBlue1;
+  }
+  @media (max-width: 1199px) {
+    width: 110px;
+    // height: 110px;
+  }
+  @media (max-width: 991px) {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    .downloadLogo_wrapper {
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 1199px) {
+        padding: 24px 13px;
+      }
+
+      &_text {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 0 5px;
+        color: $white;
+        text-decoration: none;
+        @media (max-width: 1199px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        @media (max-width: 1060px) {
+          font-size: 18px;
+        }
+      }
+      &_icon {
+        img {
+          max-width: 100%;
+          width: 40px;
+          @media (max-width: 1199px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

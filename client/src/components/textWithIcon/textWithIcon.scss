@@ -1,0 +1,25 @@
+.textWithIcon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 990px;
+  padding: 126px 0 0;
+  @media (max-width: 767px) {
+    min-height: 1600px;
+  }
+  &_wrapper {
+    .homePageCommonHeading {
+      margin: 0;
+    }
+    .textWithIcon_inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 98px 0 0;
+      @media (max-width: 767px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+    }
+  }
+}

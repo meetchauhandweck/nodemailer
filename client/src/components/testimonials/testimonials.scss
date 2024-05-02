@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+
+.testimonials {
+  background-color: $blue;
+  padding: 85px 0 117px;
+  .wrapper {
+    padding: 0 100px;
+    .card_content {
+      background-color: $blue;
+      color: $white;
+      border: 3px solid $white;
+      border-radius: 35px;
+      padding: 60px 50px 50px 81px;
+    //   margin: 0 10px;
+
+      h3 {
+        font-size: 29px;
+        font-weight: 400;
+        line-height: 37.5px;
+        text-transform: capitalize;
+        margin: 0 0 37px;
+      }
+      .content {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32.5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .swiper-3d .swiper-slide-shadow-left {
+    background-image: none !important;
+  }
+//   .swiper-slide.swiper-slide-visible.swiper-slide-next {
+//     transform: translate3d(-175px, 0px, -250px) rotateX(0deg) rotateY(0deg) !important;
+//   }
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none !important;
+  }
+  .swiper-slide.swiper-slide-visible.swiper-slide-active{
+
+  }
+  .swiper-slide.swiper-slide-visible.swiper-slide-next{
+    
+  }
+}
